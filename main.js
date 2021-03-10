@@ -24,7 +24,7 @@ const companies= [
   
   // FILTER - FILTER ANY STATEMENT THAT IS TRUE
   
-  // Get 21 and older
+  // -------Get 21 and older-------
   
   // let canDrink = [];
   // for(let i = 0; i < ages.length; i++) {
@@ -43,7 +43,7 @@ const companies= [
 
   console.log(cantDrink);
 
-//   filter all retail companies
+//   ------filter all retail companies------
 
 // ES5
 // const retailCompanies = companies.filter(function(company) {
@@ -53,8 +53,14 @@ const companies= [
 // })
 
 // ES6 - arrow functions
-const retailCompanies = companies.filter(company => company.category === "Retail");
+// const retailCompanies = companies.filter(company => company.category === "Retail");
 
-console.log(retailCompanies);
+// console.log(retailCompanies);
+
+// -----companies from the 80's----
+
+const eightiesCompanies = companies.filter(company => company.start < 1990);
+
+console.log(eightiesCompanies);
 
 
