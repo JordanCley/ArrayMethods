@@ -59,8 +59,12 @@ const companies= [
 
 // -----companies from the 80's----
 
-const eightiesCompanies = companies.filter(company => (company.start >= 1980 && company.start <= 1990));
+// const eightiesCompanies = companies.filter(company => (company.start >= 1980 && company.start <= 1990));
 
-console.log(eightiesCompanies);
+// console.log(eightiesCompanies);
 
+// ----companies longer than 10 years
 
+const tenYearCompanies = companies.filter(company => (company.end - company.start >= 10));
+
+console.log(tenYearCompanies);
