@@ -39,9 +39,9 @@ const companies= [
 //     }
 //   });
 
-  const cantDrink = ages.filter(age => age < 21);
+//   const cantDrink = ages.filter(age => age < 21);
 
-  console.log(cantDrink);
+//   console.log(cantDrink);
 
 //   ------filter all retail companies------
 
@@ -84,6 +84,29 @@ const companies= [
 
 // square root of every nunber in ages array
 
-const agesSquare = ages.map(age => Math.sqrt(age));
+// const agesSquare = ages.map(age => Math.sqrt(age));
 
-console.log(agesSquare);
+// console.log(agesSquare);
+
+// SORT
+
+// sort companies by start year
+// ES5
+// const sortedCompanies = companies.sort(function(company1, company2) {
+//      if(company1.start > company2.start) {
+//          return 1;
+//      } else {
+//          return -1;
+//      }
+// });
+
+// ES6
+// const sortedCompanies = companies.sort((c1, c2) => (c1.start > c2.start ? 1 : -1));
+
+// console.log(sortedCompanies);
+
+//  sort ages
+
+// const sortAges = ages.sort((ages1, ages2) => ages2 - ages1);
+
+// console.log(sortAges);
