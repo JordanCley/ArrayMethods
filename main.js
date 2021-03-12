@@ -65,6 +65,25 @@ const companies= [
 
 // ----companies longer than 10 years
 
-const tenYearCompanies = companies.filter(company => (company.end - company.start >= 10));
+// const tenYearCompanies = companies.filter(company => (company.end - company.start >= 10));
 
-console.log(tenYearCompanies);
+// console.log(tenYearCompanies);
+
+// ----- MAP 
+// create array of company names 
+
+// ES5
+// const companyNames = companies.map(function(company) {
+//     return company.name;
+// })
+
+// ES6
+// const companyNames = companies.map(company => company.name);
+
+// console.log(companyNames);
+
+// square root of every nunber in ages array
+
+const agesSquare = ages.map(age => Math.sqrt(age));
+
+console.log(agesSquare);
