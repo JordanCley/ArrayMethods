@@ -22,7 +22,7 @@ const companies= [
   //   console.log(company.name);
   // });
   
-  // FILTER - FILTER ANY STATEMENT THAT IS TRUE
+  //  ----- FILTER - FILTER ANY STATEMENT THAT IS TRUE
   
   // -------Get 21 and older-------
   
@@ -69,7 +69,7 @@ const companies= [
 
 // console.log(tenYearCompanies);
 
-// ----- MAP 
+// ----- MAP ------- 
 // create array of company names 
 
 // ES5
@@ -88,7 +88,7 @@ const companies= [
 
 // console.log(agesSquare);
 
-// SORT
+// ------- SORT --------
 
 // sort companies by start year
 // ES5
@@ -112,7 +112,7 @@ const companies= [
 // console.log(sortAges);
 
 
-// REDUCE
+// ------- REDUCE --------
 // for loop example
 // let ageSum = 0;
 //  for( let i = 0; i < ages.length; i++) {
@@ -130,6 +130,15 @@ const companies= [
 // }, 0);
 
 // ES6
-const totalCompanyYears = companies.reduce((total, company) => total + (company.end - company.start), 0);
+// const totalCompanyYears = companies.reduce((total, company) => total + (company.end - company.start), 0);
 
-console.log(totalCompanyYears);
+// console.log(totalCompanyYears);
+
+// Combine Methods
+
+// multiply all ages by 2 and filter those that are over 40 after you multiply them
+const combined = ages
+    .map(age => age * 2)
+    .filter(age => age > 40);
+
+console.log(combined);
