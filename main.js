@@ -136,9 +136,13 @@ const companies= [
 
 // Combine Methods
 
-// multiply all ages by 2 and filter those that are over 40 after you multiply them
+// multiply all ages by 2 and filter those that are over 40 after you multiply them 
+// then sort them from highest to lowest
+// then use reduce to add the sum
 const combined = ages
     .map(age => age * 2)
-    .filter(age => age > 40);
+    .filter(age => age > 40)
+    .sort((age1, age2) => age2 - age1)
+    .reduce((total, age) => total + age, 0);
 
 console.log(combined);
