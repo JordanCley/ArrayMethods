@@ -1,3 +1,5 @@
+const h2 = document.querySelector("h2");
+
 const companies= [
     {name: "Company One", category: "Finance", start: 1981, end: 2004},
     {name: "Company Two", category: "Retail", start: 1992, end: 2008},
@@ -107,7 +109,8 @@ const companies= [
 
 //  sort ages
 
-// const sortAges = ages.sort((ages1, ages2) => ages2 - ages1);
+const sortAges = ages.sort((ages1, ages2) => ages2 - ages1);
+h2.innerText = sortAges;
 
 // console.log(sortAges);
 
@@ -139,10 +142,12 @@ const companies= [
 // multiply all ages by 2 and filter those that are over 40 after you multiply them 
 // then sort them from highest to lowest
 // then use reduce to add the sum
-const combined = ages
-    .map(age => age * 2)
-    .filter(age => age > 40)
-    .sort((age1, age2) => age2 - age1)
-    .reduce((total, age) => total + age, 0);
+// const combined = ages
+//     .map(age => age * 2)
+//     .filter(age => age > 40)
+//     .sort((age1, age2) => age2 - age1)
+//     .reduce((total, age) => total + age, 0);
 
-console.log(combined);
+// h2.innerText = combined;
+
+// console.log(combined);
