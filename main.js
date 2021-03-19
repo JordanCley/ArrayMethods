@@ -119,6 +119,17 @@ const companies= [
 //      ageSum += ages[i];
 //  };
 
- const ageSum = ages.reduce((total, age) => total + age, 0);
+//  const ageSum = ages.reduce((total, age) => total + age, 0);
 
- console.log(ageSum)
+//  console.log(ageSum)
+
+// get total years for all companies
+// ES5
+const totalCompanyYears = companies.reduce(function(total, company) { 
+    return total + (company.end - company.start);
+}, 0);
+
+// ES6
+// const totalCompanyYears = companies.reduce((total, company) => total + (company.end - company.start), 0);
+
+console.log(totalCompanyYears);
