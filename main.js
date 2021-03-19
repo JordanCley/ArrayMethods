@@ -125,11 +125,11 @@ const companies= [
 
 // get total years for all companies
 // ES5
-const totalCompanyYears = companies.reduce(function(total, company) { 
-    return total + (company.end - company.start);
-}, 0);
+// const totalCompanyYears = companies.reduce(function(total, company) { 
+//     return total + (company.end - company.start);
+// }, 0);
 
 // ES6
-// const totalCompanyYears = companies.reduce((total, company) => total + (company.end - company.start), 0);
+const totalCompanyYears = companies.reduce((total, company) => total + (company.end - company.start), 0);
 
 console.log(totalCompanyYears);
