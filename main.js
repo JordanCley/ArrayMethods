@@ -110,3 +110,15 @@ const companies= [
 // const sortAges = ages.sort((ages1, ages2) => ages2 - ages1);
 
 // console.log(sortAges);
+
+
+// REDUCE
+// for loop example
+// let ageSum = 0;
+//  for( let i = 0; i < ages.length; i++) {
+//      ageSum += ages[i];
+//  };
+
+ const ageSum = ages.reduce((total, age) => total + age, 0);
+
+ console.log(ageSum)
